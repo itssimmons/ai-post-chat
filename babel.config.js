@@ -11,8 +11,6 @@ module.exports = function (api) {
           path: '.env',
           blocklist: null,
           allowlist: [
-            'MIDJOURNEY_API_TOKEN',
-            'OPENAI_API_TOKEN',
             'CONFIG_STORE_KEY',
             'SESSION_STORE_KEY'
           ],

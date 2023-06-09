@@ -1,4 +1,9 @@
 import { Dimensions, StatusBar } from 'react-native'
+import Constants from 'expo-constants'
+
+export const OPENAI_API_TOKEN = Constants.manifest?.extra?.openaiApiKey ?? ''
+export const MIDJOURNEY_API_TOKEN =
+  Constants.manifest?.extra?.midjourneyApiKey ?? ''
 
 export const STATUS_BAR_HEIGHT = StatusBar?.currentHeight ?? 10
 export const VIEWPORT_HEIGHT =

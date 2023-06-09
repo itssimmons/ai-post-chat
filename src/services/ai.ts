@@ -1,5 +1,4 @@
-import { COMPLETION_API_CONTEXT, IMAGINE_API_CONTEXT } from '#/consts'
-import { OPENAI_API_TOKEN } from '@env'
+import { COMPLETION_API_CONTEXT, IMAGINE_API_CONTEXT, OPENAI_API_TOKEN } from '#/consts'
 
 class ChatAI {
   public static async completion(sentence: string): Promise<Completion> {

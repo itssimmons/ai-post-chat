@@ -68,12 +68,13 @@ export default {
           height={height}
           onBlur={onBlur}
           onFocus={onFocus}
-          maxLength={limit ? limit : 25}
           placeholder={label}
+          onChangeText={onChange}
+          placeholderTextColor='#adadad'
+          maxLength={limit ? limit : 25}
           textarea={type === 'textarea'}
           multiline={type === 'textarea'}
           numberOfLines={type === 'textarea' ? 4 : 1}
-          onChangeText={onChange}
           textAlignVertical={type === 'textarea' ? 'top' : 'center'}
         />
         {limit && (
